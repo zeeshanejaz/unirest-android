@@ -1,4 +1,4 @@
-# Unirest for Android [![Build Status](https://api.travis-ci.org/zeeshanejaz/unirest-android.png)](https://travis-ci.org/zeeshanejaz/unirest-android)
+# Unirest for Android
 
 This is an android port of unirest-java project (https://github.com/Mashape/unirest-java). It uses localized copies of the latest Apache HTTP Components which are not yet available on MavenCentral repo for android projects.
 
