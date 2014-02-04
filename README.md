@@ -15,7 +15,8 @@ Unirest is a set of lightweight HTTP libraries available in multiple languages, 
 * Automatic JSON parsing into a native object for JSON responses
 
 Created with love by [thefosk](https://github.com/thefosk) @ [mashape.com](https://mashape.com)
-Ported with care ;) Zeeshan Ejaz Bhatti
+
+Ported by: Zeeshan Ejaz Bhatti
 
 ## Installing
 Currently, you must download the project and create AAR file from it to include in your android project. We shall soon upload this to a Maven repo for your ease.
