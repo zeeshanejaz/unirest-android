@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: local-httpasyncclient-4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/unirest-android/lib/local-httpasyncclient-4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

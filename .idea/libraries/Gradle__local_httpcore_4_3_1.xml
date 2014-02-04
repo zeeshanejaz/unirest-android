@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: local-httpcore-4.3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/unirest-android/lib/local-httpcore-4.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
