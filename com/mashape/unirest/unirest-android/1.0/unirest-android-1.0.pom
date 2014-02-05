@@ -50,7 +50,6 @@
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
-		<sourceDirectory>unirest-android/src</sourceDirectory>
 		<plugins>  
 		<plugin>
 			<artifactId>maven-deploy-plugin</artifactId>
@@ -82,62 +81,6 @@
 		  </executions>
 		</plugin>
 	  </plugins>
-	</build>
-	
-	<dependencies>
-		<dependency>
-			<artifactId>commons-logging</artifactId>
-			<groupId>local.org.apache.commons</groupId>
-			<scope>system</scope>
-			<version>1.1.3</version>
-			<systemPath>${internal.lib.path}/local-commons-logging-1.1.3.jar</systemPath>
-		</dependency>
-		<dependency>
-			<artifactId>httpasyncclient</artifactId>
-			<groupId>local.org.apache.http</groupId>
-			<scope>system</scope>
-			<version>4.0</version>
-			<systemPath>${internal.lib.path}/local-httpasyncclient-4.0.jar</systemPath>
-		</dependency>
-		<dependency>
-			<artifactId>httpclient</artifactId>
-			<groupId>local.org.apache.http</groupId>
-			<scope>system</scope>
-			<version>4.3.2</version>
-			<systemPath>${internal.lib.path}/local-httpclient-4.3.2.jar</systemPath>
-		</dependency>
-		<dependency>
-			<artifactId>httpcore</artifactId>
-			<groupId>local.org.apache.http</groupId>
-			<scope>system</scope>
-			<version>4.3.1</version>
-			<systemPath>${internal.lib.path}/local-httpcore-4.3.1.jar</systemPath>
-		</dependency>
-		<dependency>
-			<artifactId>httpcore-nio</artifactId>
-			<groupId>local.org.apache.http</groupId>
-			<scope>system</scope>
-			<version>4.3.1</version>
-			<systemPath>${internal.lib.path}/local-httpcore-nio-4.3.1.jar</systemPath>
-		</dependency>
-		<dependency>
-			<artifactId>httpmime</artifactId>
-			<groupId>local.org.apache.http</groupId>
-			<scope>system</scope>
-			<version>4.3.2</version>
-			<systemPath>${internal.lib.path}/local-httpmime-4.3.2.jar</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20090211</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
+	</build>	
 
 </project>
