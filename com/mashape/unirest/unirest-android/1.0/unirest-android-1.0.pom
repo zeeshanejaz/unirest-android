@@ -6,7 +6,6 @@
 	<artifactId>unirest-android</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
-
 	<name>unirest-android</name>
 	<url>https://github.com/zeeshanejaz/unirest-android</url>
 
@@ -49,7 +48,28 @@
 	</distributionManagement>
 
 	<build>
+		<finalName>${project.artifactId}</finalName>
 		<plugins>
+			<!-- Needed to process the annotations to create an xml file -->
+			<plugin>
+				<groupId>org.codehaus.plexus</groupId>
+				<artifactId>plexus-component-metadata</artifactId>
+				<version>1.0-beta-3.0.5</version>
+				<executions>
+					<execution>
+						<id>process-classes</id>
+						<goals>
+							<goal>generate-metadata</goal>
+						</goals>
+						</execution>
+						<execution>
+						<id>process-test-classes</id>
+						<goals>
+							<goal>generate-test-metadata</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>		   
 			<plugin>
 				<artifactId>maven-deploy-plugin</artifactId>
 				<version>2.8.1</version>
