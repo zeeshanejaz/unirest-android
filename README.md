@@ -19,9 +19,42 @@ Created with love by [thefosk](https://github.com/thefosk) @ [mashape.com](https
 Ported by: Zeeshan Ejaz Bhatti
 
 ## Installing
-Installing unirest-android is easy. It is available on custom maven repository. Just put the following in your build.gradle file.
+Installing unirest-android is easy. It is available on custom maven repository. 
 
-```java
+### With Maven
+You will have to do two things namely, add the repository and the dependency.
+
+Firstly:
+
+```xml
+<repositories>
+  ...
+  <repository>
+    <id>unirest-for-android</id>
+    <url>https://raw.github.com/zeeshanejaz/unirest-android/mvn-repo</url>
+  </repository>
+  ...
+</repositories>
+```
+
+and then:
+
+```xml
+<dependencies>
+  ...
+  <dependency>
+    <groupId>com.mashape.unirest</groupId>
+    <artifactId>unirest-android</artifactId>
+    <version>1.0.1</version>
+  </dependency>
+  ...
+</dependencies>
+```
+
+### With Gradle
+With Gradle, you will have to add reference to the repository and dependency in you build.gradle file i.e., the following.
+
+```javascript
 repositories {
         ...
         maven{
@@ -34,8 +67,6 @@ dependencies {
     compile 'com.mashape.unirest:unirest-android:1.0+'
 }
 ```
-
-url : 'https://raw.github.com/zeeshanejaz/unirest-android/mvn-repo'
 
 ## Asynchronous Requests
 Sometimes, well most of the time, you want your application to be asynchronous and not block, Unirest supports this in Java using anonymous callbacks, or direct method placement:
