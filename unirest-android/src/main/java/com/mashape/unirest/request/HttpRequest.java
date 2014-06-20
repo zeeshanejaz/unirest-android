@@ -62,6 +62,9 @@ public class HttpRequest extends BaseRequest {
 	}
 	
 	public HttpRequest header(String name, String value) {
+        if(null == value)
+            return this;
+
 		this.headers.put(name.toLowerCase(), value);
 		return this;
 	}
@@ -69,6 +72,10 @@ public class HttpRequest extends BaseRequest {
 	public HttpRequest headers(Map<String, String> headers) {
 		if (headers != null) {
 			for(Map.Entry<String, String> entry : headers.entrySet()) {
+                Object value = entry.getValue();
+                if(null == value)
+                    continue;
+
 				header(entry.getKey(), entry.getValue());
 			}
 		}
