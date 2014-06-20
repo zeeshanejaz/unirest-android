@@ -54,11 +54,11 @@ public class MultipartBody extends BaseRequest implements Body {
 		this.httpRequestObj = httpRequest;
 	}
 	
-	public MultipartBody field(String name, String value) {
+	public MultipartBody field(String name, Object value) {
         if(null == value)
             return this;
 
-		parameters.put(name, value);
+		parameters.put(name, value.toString());
 		return this;
 	}
 	
