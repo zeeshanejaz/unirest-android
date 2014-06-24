@@ -39,6 +39,9 @@ public class GetRequest extends HttpRequest {
 	}
 
 	public GetRequest field(String name, Object value) {
+        if(null == value)
+            return this;
+
 		StringBuilder queryString  = new StringBuilder();
 		if (this.url.contains("?")) {
 			queryString.append("&");
@@ -46,7 +49,7 @@ public class GetRequest extends HttpRequest {
 			queryString.append("?");
 		}
 		try {
-			queryString.append(name).append("=").append(URLEncoder.encode((value == null) ? "" : value.toString(), "UTF-8"));
+			queryString.append(name).append("=").append(URLEncoder.encode(value.toString(), "UTF-8"));
 		} catch (UnsupportedEncodingException e) {
 			throw new RuntimeException(e);
 		}
@@ -57,8 +60,12 @@ public class GetRequest extends HttpRequest {
 	public GetRequest fields(Map<String, Object> parameters) {
 		if (parameters != null) {
 			for(Entry<String, Object> param : parameters.entrySet()) {
-				if (param.getValue() instanceof String || param.getValue() instanceof Number || param.getValue() instanceof Boolean) {
-					field(param.getKey(), param.getValue());
+                Object value = param.getValue();
+                if(null == value)
+                    continue;
+
+				if (value instanceof String || value instanceof Number || value instanceof Boolean) {
+					field(param.getKey(), value);
 				} else {
 					throw new RuntimeException("Parameter \"" + param.getKey() + "\" can't be sent with a GET request because of type: " + param.getValue().getClass().getName());
 				}

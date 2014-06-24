@@ -61,22 +61,22 @@ public class HttpRequest extends BaseRequest {
 		return this;
 	}
 	
-	public HttpRequest header(String name, String value) {
+	public HttpRequest header(String name, Object value) {
         if(null == value)
             return this;
 
-		this.headers.put(name.toLowerCase(), value);
+		this.headers.put(name.toLowerCase(), value.toString());
 		return this;
 	}
 	
-	public HttpRequest headers(Map<String, String> headers) {
+	public HttpRequest headers(Map<String, Object> headers) {
 		if (headers != null) {
-			for(Map.Entry<String, String> entry : headers.entrySet()) {
+			for(Map.Entry<String, Object> entry : headers.entrySet()) {
                 Object value = entry.getValue();
                 if(null == value)
                     continue;
 
-				header(entry.getKey(), entry.getValue());
+				header(entry.getKey(), value.toString());
 			}
 		}
 		return this;

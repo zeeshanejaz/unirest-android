@@ -41,12 +41,12 @@ public class HttpRequestWithBody extends HttpRequest {
 	}
 
 	@Override
-	public HttpRequestWithBody header(String name, String value) {
+	public HttpRequestWithBody header(String name, Object value) {
 		return (HttpRequestWithBody) super.header(name, value);
 	}
 	
 	@Override
-	public HttpRequestWithBody headers(Map<String, String> headers) {
+	public HttpRequestWithBody headers(Map<String, Object> headers) {
 		return (HttpRequestWithBody) super.headers(headers);
 	}
 	
@@ -84,7 +84,7 @@ public class HttpRequestWithBody extends HttpRequest {
                     continue;
 
 				if (value instanceof File) {
-					body.field(param.getKey(), (File)param.getValue());
+					body.field(param.getKey(), (File)value);
 				} else {
 					body.field(param.getKey(), value.toString());
 				}

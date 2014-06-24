@@ -1,0 +1,9 @@
+This software uses some packages that are under Apache license (http://www.apache.org/licenses/LICENSE-2.0), and are modified to work with the target platform.
+The complete list of packages modified under Apache license is as follows:
+    
+Package Names:
+1) Commons Logging (commons-logging-1.1.3.jar)
+2) Apache HttpComponents (httpasyncclient-4.0.jar; httpclient-4.0.jar; httpcore-4.3.1.jar; httpcore-nio-4.3.1.jar; httpmime-4.3.2.jar)
+
+State Changes:
+The java package names were renamed from "org.apache.*" to "local.org.apache.*" in order to avoid conflicts.
