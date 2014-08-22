@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/unirest-android.iml" filepath="$PROJECT_DIR$/unirest-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unirest-android-master-jar.iml" filepath="$PROJECT_DIR$/unirest-android-master-jar.iml" />
       <module fileurl="file://$PROJECT_DIR$/unirest-android/unirest-android-unirest-android.iml" filepath="$PROJECT_DIR$/unirest-android/unirest-android-unirest-android.iml" />
     </modules>
   </component>

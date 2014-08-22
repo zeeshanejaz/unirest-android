@@ -30,7 +30,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import com.mashape.unirest.http.HttpMethod;
-import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.request.body.MultipartBody;
 import com.mashape.unirest.request.body.RequestBodyEntity;
 
@@ -93,11 +92,7 @@ public class HttpRequestWithBody extends HttpRequest {
 		this.body = body;
 		return body;
 	}
-	
-	public RequestBodyEntity body(JsonNode body) {
-		return body(body.toString());
-	}
-	
+
 	public RequestBodyEntity body(String body) {
 		RequestBodyEntity b =  new RequestBodyEntity(this).body(body);
 		this.body = b;

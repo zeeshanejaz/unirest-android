@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+<module external.linked.project.path="$MODULE_DIR$/unirest-android" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="unirest-android-master-jar" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/unirest-android/build/classes/main" />
+    <output-test url="file://$MODULE_DIR$/unirest-android/build/classes/test" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
-      <excludeFolder url="file://$MODULE_DIR$/build" />
+    <content url="file://$MODULE_DIR$/unirest-android">
+      <sourceFolder url="file://$MODULE_DIR$/unirest-android/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/unirest-android/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/unirest-android/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/unirest-android/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/unirest-android/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/unirest-android/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Gradle: local-commons-logging-1.1.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: local-httpasyncclient-4.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: local-httpclient-4.3.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: local-httpcore-4.3.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: local-httpcore-nio-4.3.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: local-httpmime-4.3.2" level="project" />
   </component>
 </module>
 

@@ -9,7 +9,6 @@ dependencies {
     compile files('lib/local-httpcore-4.3.1.jar')
     compile files('lib/local-httpcore-nio-4.3.1.jar')
     compile files('lib/local-httpmime-4.3.2.jar')
-    compile 'org.json:json:20090211'
 }
 
 jar {

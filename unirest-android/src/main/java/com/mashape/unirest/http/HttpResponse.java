@@ -83,15 +83,12 @@ public class HttpResponse<T> {
 				InputStream inputStream = new ByteArrayInputStream(rawBody);
 				this.rawBody = inputStream;
 
-				if (JsonNode.class.equals(responseClass)) {
-					String jsonString = new String(rawBody).trim();
-					this.body = (T) new JsonNode(jsonString);
-				} else if (String.class.equals(responseClass)) {
+				if (String.class.equals(responseClass)) {
 					this.body = (T) new String(rawBody);
 				} else if (InputStream.class.equals(responseClass)) {
 					this.body = (T) this.rawBody;
 				} else {
-					throw new Exception("Unknown result type. Only String, JsonNode and InputStream are supported.");
+					throw new Exception("Unknown result type. Only String and InputStream are supported.");
 				}
 			} catch (Exception e) {
 				throw new RuntimeException(e);
